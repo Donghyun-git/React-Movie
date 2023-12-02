@@ -8,7 +8,7 @@ const apiKey = process.env.REACT_APP_API_KEY;
  */
 export const dayBoxOfficeKoreaGetFetch = (currentDay) =>
   apiFetch.get(
-    `/boxoffice/searchDailyBoxOfficeList.json?key=${apiKey}&targetDt=${currentDay}&itemPerPage=5&repNationCd=K`
+    `/boxoffice/searchDailyBoxOfficeList.json?key=${apiKey}&targetDt=${currentDay}&itemPerPage=10&repNationCd=K`
   );
 
 /**
@@ -17,5 +17,5 @@ export const dayBoxOfficeKoreaGetFetch = (currentDay) =>
  */
 export const dayBoxOfficeForeignGetFetch = (currentDay) =>
   apiFetch.get(
-    `/boxoffice/searchDailyBoxOfficeList.json?key=${apiKey}&targetDt=${currentDay}&itemPerPage=5&repNationCd=F`
+    `/boxoffice/searchDailyBoxOfficeList.json?key=${apiKey}&targetDt=${currentDay}&itemPerPage=10&repNationCd=F`
   );
